@@ -1,0 +1,120 @@
+:root {
+    --teal: #279eBc;
+    --teal_hover: #084e60;
+}
+
+* {
+
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.font {
+
+    font-family: 'Castoro Titling', cursive;
+}
+
+.h-font {
+
+    font-family: 'Castoro', serif;
+}
+
+/*Remover do campo do tipo number as setas que fazem scroll de numeros*/
+/*remover para outros navegadores*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remover para Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+
+}
+
+.custom-bg {
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+
+
+}
+
+.custom-bg:hover {
+    background-color: var(--teal_hover);
+    border-color: var(--teal_hover);
+}
+
+.h-line {
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 88px;
+    right: 25px;
+}
+
+#painel_controlo_menu {
+    position: fixed;
+    height: 100%;
+    z-index: 11;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(36, 36, 36);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media screen and (max-width: 992px) {
+    #painel_controlo_menu {
+        height: auto;
+        width: 100%;
+    }
+
+
+
+}
+
+#main-content {
+
+    margin-top: 10px;
+}
+
+.alert {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-danger {
+    color: #12c36e;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-sucess {
+    color: #12c36e;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-error {
+    color: #d23838;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
